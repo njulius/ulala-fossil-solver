@@ -604,7 +604,7 @@ tSolver <- function(inGrid) {
   tMat1 <- tSolverOne(inGrid)
   tMat2 <- tSolverOne(rotate90(inGrid))
   tMat3 <- tSolverOne(rotate90(rotate90(inGrid)))
-  tMat4 <- tSolverOne(rotate(rotate90(rotate90(inGrid))))
+  tMat4 <- tSolverOne(rotate90(rotate90(rotate90(inGrid))))
   
   tMatFinal <- tMat1 + rotate90(rotate90(rotate90(tMat2))) + rotate90(rotate90(tMat3)) + rotate90(tMat4)
   
